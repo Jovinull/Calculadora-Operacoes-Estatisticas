@@ -48,6 +48,15 @@ A aplicação coleta uma lista de números fornecida pelo usuário e calcula as 
    - A variância é obtida dividindo-se a soma das diferenças quadradas pelo número de elementos.
    - A raiz quadrada da variância é calculada para obter o desvio padrão.
 
+5. **Cálculo da Moda:**
+   - Conta-se quantas vezes cada número aparece na lista e Identificamos o(s) número(s) com a maior contagem de ocorrências.
+   - Utilizamos a classe `Counter` para contar quantas vezes cada número aparece na lista quie retorna um dicionário onde:
+     - Chaves / Keys : São os números
+     - Valores / Values : São as contagens de ocorrências.
+   - Encontramos o(s) número(s) com a maior contagem de ocorrências.
+   - A moda é o valor com a maior contagem de ocorrências.
+   - Caso haja mais de uma moda, retornamos todas elas.
+
 ## Testes Unitários
 
 O projeto possui testes unitários destinados a assegurar a precisão dos cálculos realizados pelas funções de cálculo estatístico. Esses testes são desenvolvidos utilizando o módulo `unittest` do Python. Neles foram incluidos entradas padrão com respostas previamente verificadas, garantindo assim resultados corretos.
@@ -73,6 +82,7 @@ Consulte a apostila fornecida pela Professora Kamarry através do [link](https:/
   - [Desvio padrão](https://pt.wikipedia.org/wiki/Desvio_padr%C3%A3o). Acessado em: 16/05/2024.
   - [Mediana (estatística)](https://pt.wikipedia.org/wiki/Mediana_(estat%C3%ADstica)). Acessado em: 16/05/2024.
   - [Média](https://pt.wikipedia.org/wiki/M%C3%A9dia). Acessado em: 16/05/2024.
+  - [Moda](https://pt.wikipedia.org/wiki/Moda_(estat%C3%ADstica)#:~:text=Moda%20%C3%A9%20uma%20das%20medidas,em%20um%20conjunto%20de%20dados.). Acessado em: 16/05/2024.
 
 ### **Python:**
   - [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html). Acessado em: 16/05/2024.

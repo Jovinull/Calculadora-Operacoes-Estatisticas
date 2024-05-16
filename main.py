@@ -3,6 +3,7 @@ from tkinter import messagebox
 from func.media import calcular_media
 from func.mediana import calcular_mediana
 from func.desvioPadrao import calcular_desvio_padrao
+from func.moda import calcular_moda
 
 def calcular_estatisticas():
     try:
@@ -15,7 +16,8 @@ def calcular_estatisticas():
         media = calcular_media(numeros)
         mediana = calcular_mediana(numeros)
         desvio_padrao = calcular_desvio_padrao(numeros)
-        resultado.set(f"Média: {media}\nMediana: {mediana}\nDesvio Padrão: {desvio_padrao}")
+        moda = calcular_moda(numeros)
+        resultado.set(f"Média: {media}\nMediana: {mediana}\nDesvio Padrão: {desvio_padrao}\nModa: {moda}")
     except ValueError:
         messagebox.showerror("Erro de entrada", "Por favor, insira apenas números separados por espaços.")
 
