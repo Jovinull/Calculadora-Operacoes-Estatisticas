@@ -3,9 +3,9 @@ def calcular_mediana(numeros):
     n = len(numeros_ordenados)
     meio = n // 2
 
-    if n % 2 == 0:  # se for par
+    if n % 2 == 0:
         mediana = (numeros_ordenados[meio - 1] + numeros_ordenados[meio]) / 2
-    else:  # se for ímpar
+    else:
         mediana = numeros_ordenados[meio]
 
     return mediana
