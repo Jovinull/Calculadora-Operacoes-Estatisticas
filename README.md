@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é uma tarefa da primeira semana da aposta de IA da Dra. Stephanie Kamarry. O objetivo é desenvolver uma aplicação em Python que realiza operações estatísticas básicas, como média, mediana e desvio padrão, sem utilizar bibliotecas externas, com exceção da função matemática `sqrt`.
+Este projeto é uma tarefa da primeiro mês da apostila de IA da Dra. Stephanie Kamarry. O objetivo é desenvolver uma aplicação em Python que realiza operações estatísticas básicas, como média, mediana e desvio padrão, sem utilizar bibliotecas externas, com exceção da função matemática `sqrt`.
 
 ## Funcionalidade
 
@@ -48,6 +48,31 @@ A aplicação coleta uma lista de números fornecida pelo usuário e calcula as 
    - A variância é obtida dividindo-se a soma das diferenças quadradas pelo número de elementos.
    - A raiz quadrada da variância é calculada para obter o desvio padrão.
 
+## Testes Unitários
+
+O projeto possui testes unitários destinados a assegurar a precisão dos cálculos realizados pelas funções de cálculo estatístico. Esses testes são desenvolvidos utilizando o módulo `unittest` do Python. Neles foram incluidos entradas padrão com respostas previamente verificadas, garantindo assim resultados corretos.
+
+Os testes unitários são importantes porque garantem que cada parte do código funciona como esperado, ajudando a identificar problemas e falhas rapidamente durante o desenvolvimento.
+
+Os seguintes testes estão incluídos no projeto:
+
+- **Teste de Cálculo da Média**: Verifica se a função `calcular_media` retorna a média correta para uma lista de números.
+- **Teste de Cálculo da Mediana**: Confirma se a função `calcular_mediana` retorna a mediana correta, tanto para listas com número ímpar quanto par de elementos.
+- **Teste de Cálculo do Desvio Padrão**: Garante que a função `calcular_desvio_padrao` calcule o desvio padrão de forma precisa.
+- **Teste de Cálculo da Moda**: Verifica se a função `calcular_moda` retorna a moda correta para uma lista de números.
+
+**OBS:** Para executar os testes, você pode deve utilizar o comando `python -m unittest -v` no terminal.
+
 ## Link para a Apostila
 
 Consulte a apostila fornecida pela Professora Kamarry através do [link](https://docs.google.com/document/d/1E15j1WMReA4unM3atGOMGEvwEaN5kylx22nWoz2DffQ/edit#heading=h.4r9g73p14p37).
+
+## Referências
+
+### **Cálculos:**
+  - [Desvio padrão](https://pt.wikipedia.org/wiki/Desvio_padr%C3%A3o). Acessado em: 16/05/2024.
+  - [Mediana (estatística)](https://pt.wikipedia.org/wiki/Mediana_(estat%C3%ADstica)). Acessado em: 16/05/2024.
+  - [Média](https://pt.wikipedia.org/wiki/M%C3%A9dia). Acessado em: 16/05/2024.
+
+### **Python:**
+  - [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html). Acessado em: 16/05/2024.
